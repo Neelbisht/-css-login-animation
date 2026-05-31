@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+		<meta charset="UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Animated Login Form</title>
+
+	
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Font Awesome Icons -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		/>
+
+
+		<link rel="stylesheet" href="index.css" />
+	</head>
+
+	<body>
+
+		<!-- Main container -->
+		<div class="container">
+
+			<!-- 
+				Hidden checkbox used for animation toggle
+				When checked -> Sign Up panel appears
+				When unchecked -> Sign In panel appears
+			-->
+			<input
+				type="checkbox"
+				id="toggle"
+				class="toggle-checkbox hidden"
+			/>
+
+			<!--  SIGN UP FORM  -->
+
+			<div class="form-container sign-up">
+				<form>
+
+					<!-- Heading -->
+					<h1>Create Account</h1>
+
+					<!-- Social Media Icons -->
+					<div class="social-icons">
+
+						<div class="icons">
+							<i class="fa-brands fa-google"></i>
+						</div>
+
+						<div class="icons">
+							<i class="fa-brands fa-facebook"></i>
+						</div>
+
+						<div class="icons">
+							<i class="fa-brands fa-github"></i>
+						</div>
+
+						<div class="icons">
+							<i class="fa-brands fa-linkedin"></i>
+						</div>
+
+					</div>
+
+					<!-- Small text -->
+					<span>or use your email for registration</span>
+
+					<!-- Input fields -->
+					<input placeholder="name" type="text" />
+					<input placeholder="email" type="email" />
+					<input placeholder="password" type="password" />
+
+					<!-- Submit button -->
+					<button>Sign Up</button>
+
+				</form>
+			</div>
+
+			<!--SIGN IN FORM  -->
+
+			<div class="form-container sign-in">
+				<form>
+
+					<!-- Heading -->
+					<h1>Sign In</h1>
+
+					<!-- Social Media Icons -->
+					<div class="social-icons">
+
+						<div class="icons">
+							<i class="fa-brands fa-google"></i>
+						</div>
+
+						<div class="icons">
+							<i class="fa-brands fa-facebook"></i>
+						</div>
+
+						<div class="icons">
+							<i class="fa-brands fa-github"></i>
+						</div>
+
+						<div class="icons">
+							<i class="fa-brands fa-linkedin"></i>
+						</div>
+
+					</div>
+
+					<!-- Small text -->
+					<span>or use your email password</span>
+
+					<!-- Input fields -->
+					<input placeholder="email" type="email" />
+					<input placeholder="password" type="password" />
+
+					<!-- Forgot password -->
+					<a href="#">Forget Your Password?</a>
+
+					<!-- Submit button -->
+					<button>Sign In</button>
+
+				</form>
+			</div>
+
+			<!--TOGGLE PANEL -->
+
+			<div class="toggle-container">
+
+				<!-- Sliding orange panel -->
+				<div class="toggle">
+
+					<!-- Left side panel -->
+					<div class="toggle-panel toggle-left">
+
+						<h1>Welcome Back!</h1>
+
+						<p>
+							Enter your personal details to use all of site
+							features
+						</p>
+
+						<!-- 
+							Label connected with checkbox
+							Clicking it checks/unchecks checkbox
+							This triggers CSS animation
+						-->
+						<label for="toggle">Sign In</label>
+
+					</div>
+
+					<!-- Right side panel -->
+					<div class="toggle-panel toggle-right">
+
+						<h1>Hello, Friend!</h1>
+
+						<p>
+							Register with your personal details to use all of
+							site features
+						</p>
+
+						<!-- 
+							Without JavaScript:
+							Label works like a button for checkbox toggle
+						-->
+						<label for="toggle">Sign Up</label>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
